@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>MRU</title>
+</head>
+<body>
+<button onclick="window.location.href = 'index.html';">Regresar</button>
+
+    <script src="JS/MRU.js"></script>
+    <header>
+        <h1>Movimiento Rectilíneo Uniforme (MRU)</h1>
+    </header>
+
+    <main>
+       <!-- Sección de MRU -->
+<section id="mru">
+    <div class="contenido">
+        <p>El MRU se define como el movimiento en el cual un objeto se desplaza en línea recta, en una sola dirección, recorriendo distancias iguales en el mismo intervalo de tiempo, manteniendo en todo su movimiento una velocidad constante y sin aceleración.</p>
+
+        <!-- Imágenes de MRU -->
+        <img src="IMAGE/img1.jpg" alt="Imagen 1 de MRU" class="imagen-mru">
+        <img src="IMAGE/img2.png" alt="Imagen 2 de MRU" class="imagen-mru">
+
+        <!-- Formulario para MRU - Fórmula 1 -->
+        <h3>Calcular MRU - Fórmula 1</h3>
+        <form id="mru-form-1">
+            <label for="mru-velocidad-1">Velocidad (m/s):</label>
+            <input type="number" id="mru-velocidad-1" required>
+
+            <label for="mru-tiempo-1">Tiempo (s):</label>
+            <input type="number" id="mru-tiempo-1" required>
+
+            <button type="button" onclick="calcularMRUFormula1()">Calcular</button>
+            <button type="button" onclick="limpiarCamposMRUFormula1()">Limpiar</button>
+
+            <p id="resultado-mru-1"></p>
+        </form>
+
+        <!-- Formulario para MRU - Fórmula 2 -->
+        <h3>Calcular MRU - Fórmula 2</h3>
+        <form id="mru-form-2">
+            <label for="mru-velocidad-2">Velocidad (m/s):</label>
+            <input type="number" id="mru-velocidad-2" required>
+
+            <label for="mru-tiempo-2">Tiempo (s):</label>
+            <input type="number" id="mru-tiempo-2" required>
+
+            <button type="button" onclick="calcularMRUFormula2()">Calcular</button>
+            <button type="button" onclick="limpiarCamposMRUFormula2()">Limpiar</button>
+
+            <p id="resultado-mru-2"></p>
+        </form>
+
+        <!-- Formulario para MRU - Fórmula 3 -->
+        <h3>Calcular MRU - Fórmula 3</h3>
+        <form id="mru-form-3">
+            <label for="mru-velocidad-3">Velocidad (m/s):</label>
+            <input type="number" id="mru-velocidad-3" required>
+
+            <label for="mru-distancia-3">Distancia (m):</label>
+            <input type="number" id="mru-distancia-3" required>
+
+            <button type="button" onclick="calcularMRUFormula3()">Calcular</button>
+            <button type="button" onclick="limpiarCamposMRUFormula3()">Limpiar</button>
+
+            <p id="resultado-mru-3"></p>
+        </form>
+    </div>
+</section>
+ 
+</body>
+</html>
